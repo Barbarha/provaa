@@ -4,12 +4,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.color{
+    background-color:#FFCC00;  
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
     align-items: center;
 }
 
@@ -20,7 +29,7 @@ body {
 
 .logo h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .search input {
@@ -43,4 +52,23 @@ body {
 
 .search button:hover {
     background-color:rgb(224, 3, 3);
+}
+
+.imagem {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-top: 30px; 
+}
+
+.legenda {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.legenda:hover {
+    color: #B8341A; 
 }
