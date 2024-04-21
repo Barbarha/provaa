@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outback</title>
+</head>
+<body>
+    <form action="/submit_reserva" method="post">
+        <label for="quantidade_pessoas">Quantidade de Pessoas:</label>
+        <input type="number" id="quantidade_pessoas" name="quantidade_pessoas" min="1" required><br><br>
+        
+        <label for="horario_reserva">Horário:</label>
+        <input type="time" id="horario_reserva" name="horario_reserva" required><br><br>
+        
+        <label for="data_reserva">Data:</label>
+        <input type="date" id="data_reserva" name="data_reserva" required><br><br>
+        
+        <input type="submit" value="Reservar">
+    </form>
+    
+</body>

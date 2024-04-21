@@ -95,6 +95,14 @@ body {
     
 }
 
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 200px;
+}
 a.btn{
     background-color: #B8341A;
     color: #ffffff;
@@ -103,4 +111,63 @@ a.btn{
 a.btn:hover{
     background-color:#e00303;
     color: #ffffff;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFCC00;
+    border-radius: 8px;
+}
+
+.login-container h2{
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b14e4e;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+button[type="submit"]:hover {
+    background-color: #e00303;
+}
+
+.login-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #B8341A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    gap: 30px;
+    
+}
+
+.offcanvas-body a{
+    text-decoration: none;
+    color: #4b280a;
 }

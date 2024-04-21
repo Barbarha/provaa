@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outback</title>
+    <link rel="stylesheet" href="/provaa/css/outback.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/provaa/img/outback.png" alt="Logo">
+        </div>
+        <div class="voltar-btn">
+            <a href="/provaa/html/index.html">VOLTAR</a>
+        </div>
+    </div>
+
+    <!--Reserva -->
+    <div class="reserva">
+        <h2>Reserve uma Mesa</h2>
+        <form action="/submit_reserva" method="post">
+            <div class="input-group">
+                <label for="quantidade_pessoas">Quantidade de Pessoas:</label>
+                <input type="number" id="quantidade_pessoas" name="quantidade_pessoas" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="horario_reserva">Horário:</label>
+                <input type="time" id="horario_reserva" name="horario_reserva" required>
+            </div>
+            <div class="input-group">
+                <label for="data_reserva">Data:</label>
+                <input type="date" id="data_reserva" name="data_reserva" required>
+            </div>
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+
+    <!-- Seção Sobre o Restaurante -->
+    <div class="sobre-restaurante">
+        <h2>Sobre o Restaurante</h2>
+        <p>O Restaurante XYZ tem o prazer de oferecer uma experiência gastronômica única, combinando ingredientes frescos e técnicas culinárias inovadoras.</p>
+        <p>Nosso cardápio é cuidadosamente elaborado para satisfazer os paladares mais exigentes, oferecendo uma variedade de pratos que representam o melhor da culinária local e internacional.</p>
+        <p>Estamos comprometidos em proporcionar um ambiente acolhedor e serviço excepcional a todos os nossos clientes, tornando cada visita uma experiência memorável.</p>
+    </div>
+    
+   
+
+   
+</body>
+</html>
