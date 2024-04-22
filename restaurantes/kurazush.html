@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madero</title>
+    <title>Kurazushi</title>
     <link rel="stylesheet" href="/provaa/css/restaurantes.css">
 </head>
 <body>
@@ -16,34 +16,32 @@
         </div>
     </div>
 
-    <!--Reserva -->
-    <div class="reserva">
-        <h2>Reserve uma Mesa</h2>
-        <form action="/submit_reserva" method="post">
-            <div class="input-group">
-                <label for="quantidade_pessoas">Quantidade de Pessoas:</label>
-                <input type="number" id="quantidade_pessoas" name="quantidade_pessoas" min="1" required>
-            </div>
-            <div class="input-group">
-                <label for="horario_reserva">Horário:</label>
-                <input type="time" id="horario_reserva" name="horario_reserva" required>
-            </div>
-            <div class="input-group">
-                <label for="data_reserva">Data:</label>
-                <input type="date" id="data_reserva" name="data_reserva" required>
-            </div>
-            <button type="submit">Reservar</button>
-        </form>
-    </div>
+    <!--reserva -->
+    <div class="container-body">
+        <div class="reserva">
+            <h2>Reserve uma Mesa</h2>
+            <form action="/submit_reserva" method="post">
+                <div class="input-group">
+                    <label for="quantidade_pessoas">Quantidade de Pessoas:</label>
+                    <input type="number" id="quantidade_pessoas" name="quantidade_pessoas" min="1" required>
+                </div>
+                <div class="input-group">
+                    <label for="horario_reserva">Horário:</label>
+                    <input type="time" id="horario_reserva" name="horario_reserva" required>
+                </div>
+                <div class="input-group">
+                    <label for="data_reserva">Data:</label>
+                    <input type="date" id="data_reserva" name="data_reserva" required>
+                </div>
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
 
-    <!-- Seção Sobre o Restaurante -->
+    <!--sobre o restaurante -->
     <div class="sobre-restaurante">
         <h2>Sobre o Restaurante</h2>
         <p>Restaurante japonês com uma vasta variedade e com um rodízio completo.</p>
     </div>
 </div> 
-    <!-- Aqui continua o resto do seu conteúdo -->
-
-    <!-- Scripts ou links adicionais, se necessário --
 </body>
 </html>

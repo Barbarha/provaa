@@ -6,6 +6,7 @@ body {
     font-family: "Coiny", system-ui;
 }
 
+
 .container {
     display: flex;
     justify-content: center;
@@ -75,6 +76,7 @@ body {
     max-width: 400px;
     margin-top: 10px;
     margin-left: 1%;
+    max-height: 25em;
 }
 
 .reserva h2 {

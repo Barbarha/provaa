@@ -19,7 +19,7 @@
     </header>
 
     <div class="login-container">
-        <form action="#" method="post">
+        <form id="loginForm" action="#" method="post">
             <h2>Login</h2>
             <div class="input-group">
                 <label for="username">Usuário:</label>
@@ -32,54 +32,26 @@
             <button type="submit">Entrar</button>
         </form>
     </div>
+    
     <script>
-LOGIN:
-////////
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  var email = localStorage.getItem('email');
-  var password = localStorage.getItem('password');
-  var loginEmail = document.getElementById('loginEmail').value;
-  var loginPassword = document.getElementById('loginPassword').value;
-  if (email === loginEmail && password === loginPassword) {
-    // Authentication successful
-    window.location.href = 'MeusKanban.html';
-  } else {
-    // Authentication failed
-    alert('Invalid email or password');
-  }
-});
-    </script>
-    <script>
+        // Armazenando usuário e senha localmente
+        localStorage.setItem('username', 'barbarha');
+        localStorage.setItem('password', '123456');
 
-// Adiciona um ouvinte de evento ao formulário de inscrição (signupForm)
-console.log("Adicionando ouvinte de evento ao formulário de inscrição.");
-document.getElementById('signupForm').addEventListener('submit', function(event) {
-  console.log("Evento de envio do formulário acionado.");
-  // Impede o comportamento padrão de enviar o formulário
-  event.preventDefault();
-  
-  // Obtém o valor do campo de entrada de e-mail (signupEmail)
-  console.log("Obtendo valor do campo de e-mail.");
-  var email = document.getElementById('signupEmail').value;
-  
-  // Obtém o valor do campo de entrada de senha (signupPassword)
-  console.log("Obtendo valor do campo de senha.");
-  var password = document.getElementById('signupPassword').value;
-  
-  // Armazena o e-mail no armazenamento local do navegador
-  console.log("Armazenando e-mail no armazenamento local.");
-  localStorage.setItem('email', email);
-  
-  // Armazena a senha no armazenamento local do navegador
-  console.log("Armazenando senha no armazenamento local.");
-  localStorage.setItem('password', password);
-  
-  // Redireciona o usuário para a página de login (Login.html)
-  console.log("Redirecionando para a página de login.");
-  window.location.href = 'Login.html';
-});
-///////////
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var storedUsername = localStorage.getItem('username');
+            var storedPassword = localStorage.getItem('password');
+            
+            if (username === storedUsername && password === storedPassword) {
+                // Redirecionar para a página de gerenciamento
+                window.location.href = "gerenciamento.html";
+            } else {
+                alert('Nome de usuário ou senha inválidos');
+            }
+        });
     </script>
 </body>
 </html>

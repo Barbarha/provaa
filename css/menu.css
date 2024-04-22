@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Coiny", system-ui;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    background-color: #FFCC00;
+    height: 200px;
+}
+.container h1{
+    margin: 0;
+    font-size: 50px;
+    color: #B8341A;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 200px;
+}
+a.btn{
+    background-color: #B8341A;
+    color: #ffffff;
+}
+
+a.btn:hover{
+    background-color:#e00303;
+    color: #ffffff;
+}
+
+.voltar-btn {
+    margin-left: auto;
+}
+
+.voltar-btn a {
+    padding: 10px 20px;
+    background-color: #B8341A;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.voltar-btn a:hover {
+    background-color: #e00303;
+}
