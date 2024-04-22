@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outback</title>
+    <title>Pizza Hut</title>
+    <link rel="stylesheet" href="/provaa/css/restaurantes.css">
 </head>
 <body>
-    <form action="/submit_reserva" method="post">
-        <label for="quantidade_pessoas">Quantidade de Pessoas:</label>
-        <input type="number" id="quantidade_pessoas" name="quantidade_pessoas" min="1" required><br><br>
-        
-        <label for="horario_reserva">Horário:</label>
-        <input type="time" id="horario_reserva" name="horario_reserva" required><br><br>
-        
-        <label for="data_reserva">Data:</label>
-        <input type="date" id="data_reserva" name="data_reserva" required><br><br>
-        
-        <input type="submit" value="Reservar">
-    </form>
+    <div class="container">
+        <div class="logo">
+            <img src="/provaa/img/pizza-hut.jpg" alt="Logo">
+        </div>
+        <div class="voltar-btn">
+            <a href="/provaa/html/index.html">VOLTAR</a>
+        </div>
+    </div>
+
+    <!--Reserva -->
+    <div class="reserva">
+        <h2>Reserve uma Mesa</h2>
+        <form action="/submit_reserva" method="post">
+            <div class="input-group">
+                <label for="quantidade_pessoas">Quantidade de Pessoas:</label>
+                <input type="number" id="quantidade_pessoas" name="quantidade_pessoas" min="1" required>
+            </div>
+            <div class="input-group">
+                <label for="horario_reserva">Horário:</label>
+                <input type="time" id="horario_reserva" name="horario_reserva" required>
+            </div>
+            <div class="input-group">
+                <label for="data_reserva">Data:</label>
+                <input type="date" id="data_reserva" name="data_reserva" required>
+            </div>
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+
+    <!-- Seção Sobre o Restaurante -->
+    <div class="sobre-restaurante">
+        <h2>Sobre o Restaurante</h2>
+        <p>Criada em 1958 nos EUA, a Pizza Hut é a maior rede de pizzaria do mundo com presença em 100 países, está presente no Brasil desde 1989</p>
+        <p>A pizza pan é a grande referência da marca, assim como os sabores de pizzas: Pepperoni, brasileira e calabresa. Tags: massa pan, pizza, fast food, pizza doce, pepperoni, queijo, calabresa.</p>
+    </div>
+</div>
     
+    <!-- Aqui continua o resto do seu conteúdo -->
+
+    <!-- Scripts ou links adicionais, se necessário --
 </body>
+</html>
